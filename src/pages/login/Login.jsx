@@ -36,7 +36,7 @@ const Login = () => {
             <h1>Get Started</h1>
             <form className={css.form}>
                 <div className={css.form_group}>
-                    <label>Email</label>
+                    <label>User name or email</label>
                     <input type="text" placeholder='Email'/>
                 </div>
                 <div className={css.form_group}>
@@ -50,7 +50,7 @@ const Login = () => {
                     <button>Login</button>
                 </div>
                 <div className={css.or}>
-                <hr /><span>Or</span><hr />
+                <span>Or</span>
                 </div>
                 <div className={css.button}>
                     <button className={css.google}>Continue With Google</button>
@@ -65,6 +65,15 @@ const Login = () => {
                 </div>
             </form>
         </div>
+     </div>
+     <div className={css.loginfooter}>
+        <div className={css.loginfooterWrapper}>
+        <Link>About</Link>
+        <Link>Help</Link>
+        <Link>Terms</Link>
+        <Link>Privacy</Link>
+        </div>
+        
      </div>
     </div>
   )

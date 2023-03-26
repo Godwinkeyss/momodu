@@ -1,7 +1,8 @@
 .container{
     background: #ffffff;
-    height: 100vh;
+    height: 100%;
     padding: 16px 2rem;
+    overflow: hidden;
     /* display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +55,7 @@ margin-right: auto;
     background: #F2F6F7;
     border-radius: 20px 0px 0px 0px;
      height: 100%;
-     padding: 20px 40px 100px;
+     padding: 10px 40px 10px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -68,11 +69,12 @@ margin-right: auto;
 }
 .form{
     margin-right: auto;
-    
+    height: 100%;
 }
 .form label{
     font-size: .9rem;
     margin-bottom: 8px;
+   
 }
 .form_group{
     padding: 10px 0px;
@@ -104,12 +106,12 @@ margin-right: auto;
 }
 .button button{
     width: 100%;
-    padding: 8px 20px;
+    padding: 14px 25px;
     border-radius: 8px;
     background: #0A70DE;
     border: none;
-   
-    margin-bottom: 14px;
+    
+    margin-bottom: 20px;
     color:#ffffff;
 }
 .button img{
@@ -117,10 +119,14 @@ margin-right: auto;
     height: 25px;
     position: absolute;
     left: 10px;
-    top:4px;
+    top:8px;
     background: #fff;
     border-radius: 50%;
     object-fit: cover;
+}
+.google{
+    margin-bottom: 1.8rem !important;
+   
 }
 
 .or{
@@ -131,11 +137,30 @@ margin-right: auto;
 }
 .or span{
   font-size: 0.8rem;
+  position: relative;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+} 
+.or span::before{
+    content: "";
+    border: 1px solid #d9caca;
+    position: absolute;
+    width: 290px;
+    top: 8px;
+    left: 30px;
 }
-.or hr{
+.or span::after{
+    content: "";
+    border: 1px solid #d9caca;
+    width: 290px;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+}
+/* .or hr{
     color:red;
     width: 300px;
-}
+} */
 .signup{
     display: flex;
     align-items: center;
@@ -197,14 +222,35 @@ margin-right: auto;
   font-size: 0.9rem;
 
 }
-
+.loginfooter{
+    background: #0A70DE;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 20px; 
+    margin-top: 2rem;
+}
+.loginfooterWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-left: 10rem;
+}
+.loginfooter a{
+    text-decoration: none;
+    color:#fff;
+   
+}
 @media screen and (max-width:768px) {
     .left{
         display: none;
     }
     .login{
         flex-direction: column;
+        gap: 0px;
     }
+
    
 }
 @media screen and (max-width:460px){
@@ -214,22 +260,57 @@ margin-right: auto;
     .right{
        margin: 0px;
        padding: unset;
-       padding: 30px 60px 100px 30px;
+       padding: 50px 40px 200px 30px;
        border-radius: 20px ;
-       margin-top: 100px;
+       /* margin-top: 100px; */
+      
        
     }
+    .form{
+        margin: unset;
+    }
     .form input{
-        width: 100%;
-        padding: 8px 20px;
+        width: 250px;
+        padding: 14px 20px;
+       
+    }
+    .form label{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        font-weight: 500;
        
     }
     .button{
-        width: 100%;
-    }
-    .or hr{
-        color:red;
-        width: 100px;
-    }
     
+    }
+    .button button{
+        /* width: 100%; */
+    }
+    .button img{
+        width: 25px;
+        height: 25px;
+    
+        left: 10px;
+        top:8px;
+        background: #fff;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .or span::before{
+        content: "";
+        width: 90px;
+       
+    }
+    .or span::after{
+        content: "";
+      
+        width: 90px;
+       
+    }
+    .loginfooter{
+        display: none;
+    }
+    .signup{
+        /* margin-top: rem; */
+    }
 }
