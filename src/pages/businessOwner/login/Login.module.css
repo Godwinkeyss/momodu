@@ -8,24 +8,7 @@
     justify-content: center;
     flex-direction: column; */
 }
-.header{
 
-height: 60px;
-display: flex;
-align-items: center;
-margin-right: auto;
-
-}
-.header span{
-    background: #0A70DE;
-    color:#ffffff;
-    padding: 5px 12px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 800;
-
-}
 .login{
     display: flex;
     align-items: center;

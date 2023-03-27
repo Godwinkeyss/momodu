@@ -3,7 +3,11 @@ import css from './Header.module.css'
 
 const Header = () => {
   return (
-    <div className={css}>Header</div>
+    <div className={css.container}>
+       <div className={css.header}>
+        <span>F</span>
+     </div>
+    </div>
   )
 }
 

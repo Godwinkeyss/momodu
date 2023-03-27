@@ -1,15 +1,15 @@
 import React from 'react'
 import css from './Login.module.css'
-import LoginImg from '../../images/charming-successful-young-female-yellow-autumn-coat-smiling-broadly-holding-hands-crossed-body-confident-self-assured-pose-standing-delighted-happy-red-background-removebg-preview.png';
-import Google from '../../images/R.png';
-import Apple from '../../images/R (1).png';
+import LoginImg from '../../../images/charming-successful-young-female-yellow-autumn-coat-smiling-broadly-holding-hands-crossed-body-confident-self-assured-pose-standing-delighted-happy-red-background-removebg-preview.png';
+import Google from '../../../images/R.png';
+import Apple from '../../../images/R (1).png'
 import {Link} from 'react-router-dom'
+import Header from '../../../components/headers/Header';
+
 const Login = () => {
   return (
     <div className={css.container}>
-     <div className={css.header}>
-        <span>F</span>
-     </div>
+     <Header />
      <div className={css.login}>
         <div className={css.left}>
             <img src={LoginImg} alt="" />
@@ -61,7 +61,7 @@ const Login = () => {
                     <img src={Apple} alt="" />
                 </div>
                 <div className={css.signup}>
-                    <p>Don't have a Fund account? <Link to="/">Signup</Link> </p>
+                    <p>Don't have a Fund account? <Link to="/select-account">Signup</Link> </p>
                 </div>
             </form>
         </div>
