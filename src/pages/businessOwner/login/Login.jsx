@@ -72,7 +72,7 @@ const Login = () => {
         <Link>Help</Link>
         <Link>Terms</Link>
         <Link>Privacy</Link>
-        {/* test */}
+        {/* test2 */}
         </div>
         
      </div>
