@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../../components/headers/Header';
 import css from './AccountType.module.css';
-import Account from '../../../images/accont.webp';
+// import Account from '../../../images/accont.webp';
 import Acc2 from '../../../images/acc2.webp';
 import { Link } from 'react-router-dom';
 
