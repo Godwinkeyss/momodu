@@ -1,5 +1,4 @@
 
-import { useState } from 'react';
 import { BrowserRouter,Routes, Route} from 'react-router-dom';
 import './App.css';
 // import Header from './components/headers/Header';
@@ -10,7 +9,7 @@ import Login from './pages/businessOwner/login/Login';
 
 
 function App() {
-  const [user,setUser] = useState(true)
+  
   return (
     <div className="app">
      {/* <Header /> */}
@@ -18,10 +17,10 @@ function App() {
      <Routes>
       {/* <Route exact path="/" element={} */}
       <Route path="/" element={<Login />} />
-      {user ?
+      
         <Route path="/select-account" element={<AccountType />} />
-        : 'not found'
-      }
+        
+      
   
      </Routes>
      </BrowserRouter>
